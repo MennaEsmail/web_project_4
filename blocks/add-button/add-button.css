@@ -1,0 +1,16 @@
+.add-button{
+    width: 150px;
+    height: 50px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.add-button:focus{
+    outline: none;
+}
