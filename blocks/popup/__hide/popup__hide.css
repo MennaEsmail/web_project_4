@@ -1,0 +1,13 @@
+.popup__hide{
+    animation: fade-out 1s;
+    display: none;
+}
+
+@keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
