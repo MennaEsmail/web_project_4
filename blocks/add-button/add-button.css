@@ -10,7 +10,7 @@
     justify-content: center;
     margin-left: auto;
     cursor: pointer;
-    transition: ease-in 0.3s opacity;
+    transition: ease-in .3s opacity;
 }
 
 .add-button:focus{
