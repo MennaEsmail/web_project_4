@@ -1,0 +1,8 @@
+.like-button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.like-button:focus{
+    outline: none;
+}
