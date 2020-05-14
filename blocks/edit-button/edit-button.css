@@ -9,8 +9,12 @@
     justify-content: center;
     margin-top: 19px;
     cursor: pointer;
+    transition: ease-in 0.3s opacity;
 }
 
 .edit-button:focus{
     outline: none;
+}
+.edit-button:hover{
+    opacity: 0.6;
 }

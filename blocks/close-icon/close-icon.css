@@ -1,0 +1,12 @@
+.close-icon{
+    height: 40.7px;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    cursor: pointer;
+    transition: ease-in 0.3s opacity;
+}
+
+.close-icon:hover{
+    opacity: 0.6;
+}

@@ -10,12 +10,15 @@
     justify-content: center;
     margin-left: auto;
     cursor: pointer;
+    transition: ease-in 0.3s opacity;
 }
 
 .add-button:focus{
     outline: none;
 }
-
+.add-button:hover{
+    opacity: 0.6;
+}
 @media screen and (max-width: 800px){
     .add-button{
        margin: 36px auto auto auto;

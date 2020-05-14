@@ -10,3 +10,6 @@
 @import url('../blocks/elements/elements.css');
 @import url('../blocks/like-button/like-button.css');
 @import url('../blocks/footer/footer.css');
+@import url('../blocks/form/form.css');
+@import url('../blocks/popup/popup.css');
+@import url('../blocks/close-icon/close-icon.css');
