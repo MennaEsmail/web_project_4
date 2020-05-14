@@ -4,6 +4,7 @@
     line-height: 56px;
     color: #FFFFFF;
     margin: 0;
+    word-break: break-all;
     grid-area: name;
 }
 @media screen and (max-width: 480px){
