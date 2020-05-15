@@ -15,3 +15,11 @@
     opacity: 0.6;
 }
 
+@media screen and (max-width: 480px){
+    .button_close{
+    height: 25px;
+    width: 25px;
+    top: -25px;
+    right: -20px;
+    }
+}

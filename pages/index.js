@@ -1,7 +1,7 @@
 //handle pupup show and hide
 const popup = document.querySelector('.popup');
 let editBtn = document.querySelector('.button_edit');
-let closeBtn = document.querySelector('.close-icon');
+let closeBtn = document.querySelector('.button_close');
 function showpopup(){
     popup.classList.toggle('popup_is-opened');
 }
@@ -18,15 +18,17 @@ let form = document.querySelector('.form');
 function onSubmit(event){
 
     event.preventDefault(); 
-    let formInputs = form.querySelectorAll('.form__input');
+    let name = form.querySelector('.form__input_name');
+    let about = form.querySelector('.form__input_about');
     let profileName = document.querySelector('.profile__name');
     let profileAboutMe = document.querySelector('.profile__about-me');
 
-    nameValue= formInputs[0].value;
-    aboutMeValue= formInputs[1].value;
+    nameValue= name.value;
+    aboutMeValue= about.value;
     profileName.textContent = nameValue;
     profileAboutMe.textContent = aboutMeValue;
     hidepopup();
 
 }
-form.addEventListener('submit', onSubmit);
+form.addEventListener('submit', onSubmit); 
+
