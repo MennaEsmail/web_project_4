@@ -10,6 +10,7 @@
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     word-break: break-word;
+    max-width: 380px;
     grid-area: name;
 }
 @media screen and (max-width: 480px){
