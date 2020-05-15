@@ -10,62 +10,59 @@
     <div class="root__container">
         <header class="header">
             <img class="logo" src="./images/Vector.svg" alt="logo"/>
-            <hr class="header__line"/>
         </header>
         <main>
             <section class="profile">
-                <div class="avatar">
-                    <img class="elipse" src="./images/avatar.png" alt="avatar"/>
-                </div>
+                    <img class="profile__pic" src="./images/avatar.png" alt="avatar"/>
                     <div class="profile__info">
-                        <h2 class="profile__name">Jacques Cousteau</h2>
+                        <h1 class="profile__name">Jacques Cousteau</h1>
                         <p class="profile__about-me">Explorer</p>
-                        <button class="edit-button"><img class="edit-button__vector" alt="edit button" src="./images/ediet.svg" /></button>
+                        <button class="button button_edit"></button>
                     </div>
-                    <button class="add-button"><img class="add-button__vector" alt="add-button" src="./images/add.svg" /></button>
+                    <button class=" button button_add"></button>
             </section>
             <section class="elements">
                 <ul class="elements__list">
                     <li class="elements__item">
-                        <img class="elements__image" alt="" src="./images/yosemite.png"/>
+                        <div class="elements__image"  style="background-image: url('./images/yosemite.png')"></div>
                         <div class="elements__footer">
                             <h3 class="elements__title">Yosemite Valley</h3>
-                            <button class="like-button"><img alt="love it" src="./images/love.svg"/></button>
+                            <button class="button button_like"> </button>
                         </div>
                     </li>
                     <li class="elements__item">
-                        <img class="elements__image" alt="" src="./images/lake.png"/>
+                        <div class="elements__image"  style="background-image: url('./images/lake.png')"></div>
                         <div class="elements__footer">
                             <h3 class="elements__title">Lake Louise</h3>
-                            <button class="like-button"><img alt="love it" src="./images/love.svg"/></button>
+                            <button class="button button_like"> </button>
                         </div>
                     </li>
                     <li class="elements__item">
-                        <img class="elements__image" alt="" src="./images/bald.png"/>
+                        <div class="elements__image"  style="background-image: url('./images/bald.png')"></div>
                         <div class="elements__footer">
                             <h3 class="elements__title">Bald Mountains</h3>
-                            <button class="like-button"><img alt="love it" src="./images/love.svg"/></button>
+                            <button class="button button_like"> </button>
                         </div>
                     </li>
                     <li class="elements__item">
-                        <img class="elements__image" alt="" src="./images/latemar.png"/>
+                        <div class="elements__image"  style="background-image: url('./images/latemar.png')"></div>
                         <div class="elements__footer">
                             <h3 class="elements__title">Latemar</h3>
-                            <button class="like-button"><img alt="love it" src="./images/love.svg"/></button>
+                            <button class="button button_like"> </button>
                         </div>
                     </li>
                     <li class="elements__item">
-                        <img class="elements__image" alt="" src="./images/vanois.png"/>
+                        <div class="elements__image"  style="background-image: url('./images/vanois.png')"></div>
                         <div class="elements__footer">
-                            <h3 class="elements__title">Vanois National...</h3>
-                            <button class="like-button"><img alt="love it" src="./images/love.svg"/></button>
+                            <h3 class="elements__title">Vanois Nationality</h3>
+                            <button class="button button_like"> </button>
                         </div>
                     </li>
                     <li class="elements__item">
-                        <img class="elements__image" alt="" src="./images/lago.png"/>
+                        <div class="elements__image"  style="background-image: url('./images/lago.png')"></div>
                         <div class="elements__footer">
                             <h3 class="elements__title">Lago di Braies</h3>
-                            <button class="like-button"><img alt="love it" src="./images/love.svg"/></button>
+                            <button class="button button_like"> </button>
                         </div>
                     </li>
                 </ul>
@@ -74,12 +71,16 @@
         <footer class="footer">
             <p class="footer__copyright">&copy; 2020 Around The U.S.</p>
         </footer>
-        <section class="popup popup__hide">
+        <section class="popup popup_is-opened">
             <form class="form">
+<<<<<<< HEAD
                 <img class="close-icon" src="./images/Close-Icon.svg" alt="close icon"/>
+=======
+                <button class="button button_close"></button>
+>>>>>>> develop
                 <h2 class="form__title">Edit profile</h2>
-                <input class="form__input name" type="text" value="Jacques Cousteau" placeholder="Name"/>
-                <input class="form__input about-me" type="text" value="Explorer" placeholder="About me"/>
+                <input class="form__input" type="text" value="Jacques Cousteau" placeholder="Name"/>
+                <input class="form__input " type="text" value="Explorer" placeholder="About me"/>
                 <button class="form__submit-button">Save</button>
             </form>
         </section>

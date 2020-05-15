@@ -6,7 +6,7 @@
     width: 100%;
     color: white;
     cursor: pointer;
-    transition: ease-in 0.3s opacity;
+    transition: ease-in .3s opacity;
 }
 .form__submit-button:focus{
     outline: none;
