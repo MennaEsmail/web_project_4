@@ -6,11 +6,7 @@ function showpopup(){
     popup.classList.toggle('popup_is-opened');
 }
 editBtn.addEventListener("click", showpopup);
-
-function hidepopup(){
-    popup.classList.toggle('popup_is-opened');
-}
-closeBtn.addEventListener("click", hidepopup);
+closeBtn.addEventListener("click", showpopup);
 
 //edit profile
 let form = document.querySelector('.form');
@@ -27,7 +23,7 @@ function onSubmit(event){
     aboutMeValue= about.value;
     profileName.textContent = nameValue;
     profileAboutMe.textContent = aboutMeValue;
-    hidepopup();
+    popup.classList.add('popup_is-opened');
 
 }
 form.addEventListener('submit', onSubmit); 
