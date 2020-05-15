@@ -1,16 +1,14 @@
 //handle pupup show and hide
-let popup = document.querySelector('.popup');
-let editBtn = document.querySelector('.edit-button');
+const popup = document.querySelector('.popup');
+let editBtn = document.querySelector('.button_edit');
 let closeBtn = document.querySelector('.close-icon');
 function showpopup(){
-    popup.classList.remove('popup__hide');
-    popup.classList.add('popup__show');
+    popup.classList.toggle('popup_is-opened');
 }
 editBtn.addEventListener("click", showpopup);
 
 function hidepopup(){
-    popup.classList.add('popup__hide');
-    popup.classList.remove('popup__show');
+    popup.classList.toggle('popup_is-opened');
 }
 closeBtn.addEventListener("click", hidepopup);
 
@@ -20,17 +18,15 @@ let form = document.querySelector('.form');
 function onSubmit(event){
 
     event.preventDefault(); 
-    let name = form.querySelector('.name');
-    let aboutMe = form.querySelector('.about-me');
+    let formInputs = form.querySelectorAll('.form__input');
     let profileName = document.querySelector('.profile__name');
     let profileAboutMe = document.querySelector('.profile__about-me');
 
-    nameValue= name.value;
-    aboutMeValue= aboutMe.value;
+    nameValue= formInputs[0].value;
+    aboutMeValue= formInputs[1].value;
     profileName.textContent = nameValue;
     profileAboutMe.textContent = aboutMeValue;
-    popup.classList.add('popup__hide');
-    popup.classList.remove('popup__show');
+    hidepopup();
 
 }
 form.addEventListener('submit', onSubmit);
