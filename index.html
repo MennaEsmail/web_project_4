@@ -32,19 +32,42 @@
         <footer class="footer">
             <p class="footer__copyright">&copy; 2020 Around The U.S.</p>
         </footer>
-    </div>
 
-    <template id="form-popup">
-        <div class="popup">
-            <form class="form">
+            <div class="popup popup_type_edit-profile">
+                <div class="popup__content">
+                <form action="#" class="form">
+                    <h2 class="form__title">Edit profile</h2>
+                    <input class="form__input form__input_name" type="text" value="Jacques Cousteau" placeholder="Jacques Cousteau" />
+                    <input class="form__input form__input_about" type="text" value="Explorer" placeholder="Explorer" />
+                    <button class="form__submit-button">Save</button>
+                </form>
                 <button class="button button_close"></button>
-                <h2 class="form__title"></h2>
-                <input class="form__input form__input_name" type="text" value="" placeholder="" />
-                <input class="form__input form__input_about" type="text" value="" placeholder="" />
-                <button class="form__submit-button"></button>
-            </form>
-        </div>
-    </template>
+            </div>
+            </div>
+
+            <div class="popup popup_type_add-photo">
+                <div class="popup__content">
+                <form action="#" class="form">
+                    <h2 class="form__title">New place</h2>
+                    <input class="form__input form__input_photo-title" type="text" placeholder="title" />
+                    <input class="form__input form__input_photo-url" type="text"  placeholder="Image link" />
+                    <button class="form__submit-button">Create</button>
+                </form>
+                <button class="button button_close"></button>
+            </div>
+            </div>
+
+      
+            <div class="popup popup_type_image">
+                <div class="popup__content popup__content_theme_transparent">
+                    <figure class="figure">
+                        <img src="" alt="" class="figure__image">
+                        <figcaption class="figure__caption"></figcaption>
+                    </figure>
+                    <button type="button" class=" popup__close popup__close_type_image"></button>
+                </div> 
+            </div>
+    </div>
 
     <template id="element_card">
         <li class="elements__item">
@@ -56,15 +79,7 @@
             </div>
         </li>
     </template>
-    <template id="galary">
-        <div class="popup">
-            <div class="galary-holder">
-                <button class="button button_close"></button>
-                <img class="galary-holder__image" src="" />
-                <p class="galary-holder__paragraph"></p>
-            </div>
-        </div>
-    </template>
+
     <script src="./pages/index.js"></script>
 </body>
 
