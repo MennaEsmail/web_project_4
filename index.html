@@ -23,64 +23,46 @@
             </section>
             <section class="elements">
                 <ul class="elements__list">
-                    <li class="elements__item">
-                        <div class="elements__image"  style="background-image: url('./images/yosemite.png')"></div>
-                        <div class="elements__footer">
-                            <h3 class="elements__title">Yosemite Valley</h3>
-                            <button class="button button_like"> </button>
-                        </div>
-                    </li>
-                    <li class="elements__item">
-                        <div class="elements__image"  style="background-image: url('./images/lake.png')"></div>
-                        <div class="elements__footer">
-                            <h3 class="elements__title">Lake Louise</h3>
-                            <button class="button button_like"> </button>
-                        </div>
-                    </li>
-                    <li class="elements__item">
-                        <div class="elements__image"  style="background-image: url('./images/bald.png')"></div>
-                        <div class="elements__footer">
-                            <h3 class="elements__title">Bald Mountains</h3>
-                            <button class="button button_like"> </button>
-                        </div>
-                    </li>
-                    <li class="elements__item">
-                        <div class="elements__image"  style="background-image: url('./images/latemar.png')"></div>
-                        <div class="elements__footer">
-                            <h3 class="elements__title">Latemar</h3>
-                            <button class="button button_like"> </button>
-                        </div>
-                    </li>
-                    <li class="elements__item">
-                        <div class="elements__image"  style="background-image: url('./images/vanois.png')"></div>
-                        <div class="elements__footer">
-                            <h3 class="elements__title">Vanois Nationality</h3>
-                            <button class="button button_like"> </button>
-                        </div>
-                    </li>
-                    <li class="elements__item">
-                        <div class="elements__image"  style="background-image: url('./images/lago.png')"></div>
-                        <div class="elements__footer">
-                            <h3 class="elements__title">Lago di Braies</h3>
-                            <button class="button button_like"> </button>
-                        </div>
-                    </li>
+
                 </ul>
             </section>
         </main>
         <footer class="footer">
             <p class="footer__copyright">&copy; 2020 Around The U.S.</p>
         </footer>
-        <section class="popup popup_is-opened">
+    </div>
+    
+    <template id="form-popup">
+        <div class="popup">
             <form class="form">
                 <button class="button button_close"></button>
-                <h2 class="form__title">Edit profile</h2>
-                <input class="form__input form__input_name" type="text" value="Jacques Cousteau" placeholder="Name"/>
-                <input class="form__input form__input_about" type="text" value="Explorer" placeholder="About me"/>
-                <button class="form__submit-button">Save</button>
+                <h2 class="form__title"></h2>
+                <input class="form__input form__input_name" type="text" value="" placeholder=""/>
+                <input class="form__input form__input_about" type="text" value="" placeholder=""/>
+                <button class="form__submit-button"></button>
             </form>
-        </section>
-    </div>
+        </div>
+    </template>
+
+    <template id="element_card">
+        <li class="elements__item">
+            <div class="elements__image"></div>
+            <button class="button button_delete"></button>
+            <div class="elements__footer">
+                <h3 class="elements__title"></h3>
+                <button class="button button_like"></button>
+            </div>
+        </li>
+    </template>
+    <template id="galary">
+        <div class="popup">
+            <div class="galary-holder">
+                <button class="button button_close"></button>
+                <img class="galary-holder__image" src=""/>
+                <p class="galary-holder__paragraph"></p>
+            </div>
+        </div>
+    </template>
     <script src="./pages/index.js"></script>
 </body>
 </html>

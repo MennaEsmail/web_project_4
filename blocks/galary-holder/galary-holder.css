@@ -1,0 +1,18 @@
+@import url('./__image/galary-holder__image.css');
+@import url('./__paragraph/galary-holder__paragraph.css');
+.galary-holder{
+    max-width: 816px;
+    min-width: 433px;
+    margin: auto;
+    height: 540px;
+    position: relative;
+}
+
+@media screen and (max-width : 900px){
+    .galary-holder{
+        max-width: 80%;
+        min-width: 240px;
+        height: 299px;
+        width: auto;
+    }
+}

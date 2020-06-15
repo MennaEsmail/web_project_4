@@ -2,6 +2,7 @@
 @import url('./_add/button_add.css');
 @import url('./_like/button_like.css');
 @import url('./_close/button_close.css');
+@import url('./_delete/button_delete.css');
 
 .button{
     background-color: transparent;
