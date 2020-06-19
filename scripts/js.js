@@ -26,6 +26,21 @@ function togglePopup(modal) {
     modal.classList.toggle('popup_opened');
 }
 
+function escAndClick(pop) {
+    // Popups close with click outside box
+    pop.addEventListener('click', (evt) => {
+      if (evt.target.classList.contains("popup")) {
+        pop.classList.remove("popup_opened");
+  
+      }
+    });
+  
+    window.addEventListener("keyup", (evt) => {
+      if (evt.key === "Escape") {
+        pop.classList.remove("popup_opened");
+      }
+    });
+  };
 
 function formSubmitHandler(event) { 
     event.preventDefault();
@@ -61,21 +76,7 @@ imageCloseButton.addEventListener('click', () => {
 
 
 
-function escAndClick(pop) {
-    // Popups close with click outside box
-    pop.addEventListener('click', (evt) => {
-      if (evt.target.classList.contains("popup")) {
-        pop.classList.remove("popup_opened");
-  
-      }
-    });
-  
-    window.addEventListener("keyup", (evt) => {
-      if (evt.key === "Escape") {
-        pop.classList.remove("popup_opened");
-      }
-    });
-  };
+
 
 const initialCards = [
     {
@@ -122,7 +123,7 @@ const createCard = (data) => {
         cardLikeButton.classList.toggle('button_like-active');
     });
 
-    cardRemoveButton.addEventListener('click', (e) => {
+    cardRemoveButton.addEventListener('click', () => {
         cardImage.parentNode.remove();
     }); 
 

@@ -1,5 +1,19 @@
-
 ///validation
+const hideErrorMessage = (form, input, { inputErrorClass, errorClass }) => {
+  const error = form.querySelector('#' + input.id + '-error');
+  console.log(error)
+  input.classList.remove(inputErrorClass);
+  error.classList.remove(errorClass);
+  error.textContent = "";
+};
+
+const showErrorMessage = (form, input, errorMessage, { inputErrorClass, errorClass }) => {
+  const error = form.querySelector('#' + input.id + '-error');
+  input.classList.add(inputErrorClass);
+  error.textContent = errorMessage;
+  error.classList.add(errorClass);
+};
+
 const checkInputValidation = (form, input, rest) => {
   if (input.validity.valid) {
     hideErrorMessage(form, input, rest);
@@ -8,29 +22,13 @@ const checkInputValidation = (form, input, rest) => {
   }
 }
 
-const showErrorMessage = (form, input, errorMessage, { inputErrorClass, errorClass }) => {
-  const error = input.nextElementSibling;
-  input.classList.add(inputErrorClass);
-  error.textContent = errorMessage;
-  error.classList.add(errorClass);
-};
-
-const hideErrorMessage = (form, input, { inputErrorClass, errorClass }) => {
-  const error = input.nextElementSibling;
-  input.classList.remove(inputErrorClass);
-  error.classList.remove(errorClass);
-  error.textContent = "";
-};
-
-
 const toggleButtonState = (inputs, submitButton, { inactiveButtonClass }) => {
   const isValid = inputs.some((input) => input.validity.valid);
   if (isValid) {
     submitButton.classList.remove(inactiveButtonClass);
-
   } else {
+    submitButton.disabled = true
     submitButton.classList.add(inactiveButtonClass);
-
   }
 }
 
