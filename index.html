@@ -39,11 +39,11 @@
                     <h2 class="form__title">Edit profile</h2>
                     <label class="form__label">
                         <input class="form__input form__input_name" type="text"  minlength="2" maxlength="40"  pattern="[A-Za-z -]{2,40}" value="Jacques Cousteau" placeholder="Name" required/>
-                        <span class="form__error "></span>
+                        <span class="form__error form__error_edit"></span>
                     </label>
                     <label class="form__label">
                         <input class="form__input form__input_about" type="text" minlength="2" maxlength="200" value="Explorer" pattern="[A-Za-z -]{2,40}" placeholder="About" required/>
-                        <span class="form__error "></span>
+                        <span class="form__error form__error_edit"></span>
                     </label>
                     <button class="form__submit-button form__submit-invalid">Save</button>
                 </form>
@@ -92,7 +92,8 @@
         </li>
     </template>
 
-    <script src="./pages/index.js"></script>
+    <script src="./scripts/js.js"></script>
+    <script src="./scripts/validate.js"></script>
 </body>
 
 </html>
