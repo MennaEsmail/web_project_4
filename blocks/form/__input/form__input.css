@@ -7,9 +7,3 @@
 .form__input:focus{
     outline: none;
 }
-.form__input:first-of-type{
-   margin-bottom: 29px;
-}
-.form__input:last-of-type{
-    margin-bottom: 48px;
- }

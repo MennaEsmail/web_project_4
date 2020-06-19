@@ -37,9 +37,15 @@
                 <div class="popup__content">
                 <form action="#" class="form">
                     <h2 class="form__title">Edit profile</h2>
-                    <input class="form__input form__input_name" type="text" value="Jacques Cousteau" placeholder="Jacques Cousteau" />
-                    <input class="form__input form__input_about" type="text" value="Explorer" placeholder="Explorer" />
-                    <button class="form__submit-button">Save</button>
+                    <label class="form__label">
+                        <input class="form__input form__input_name" type="text"  minlength="2" maxlength="40"  pattern="[A-Za-z -]{2,40}" value="Jacques Cousteau" placeholder="Name" required/>
+                        <span class="form__error "></span>
+                    </label>
+                    <label class="form__label">
+                        <input class="form__input form__input_about" type="text" minlength="2" maxlength="200" value="Explorer" pattern="[A-Za-z -]{2,40}" placeholder="About" required/>
+                        <span class="form__error "></span>
+                    </label>
+                    <button class="form__submit-button form__submit-invalid">Save</button>
                 </form>
                 <button class="button button_close"></button>
             </div>
@@ -49,9 +55,15 @@
                 <div class="popup__content">
                 <form action="#" class="form">
                     <h2 class="form__title">New place</h2>
-                    <input class="form__input form__input_photo-title" type="text" placeholder="title" />
-                    <input class="form__input form__input_photo-url" type="text"  placeholder="Image link" />
-                    <button class="form__submit-button">Create</button>
+                    <label class="form__label">
+                        <input class="form__input form__input_invalid  form__input_photo-title" type="text" name="placename" required placeholder="title" />
+                        <span class="form__error " name="placename-error"> Please fill out this field.</span>
+                    </label>
+                    <label class="form__label">
+                        <input class="form__input form__input_invalid form__input_photo-url" type="url" name="popupurl" required placeholder="Image link" />
+                        <span class="form__error " name="popupurl-error">Please enter a web address.</span>
+                    </label>
+                    <button class="form__submit-button form__submit-invalid">Create</button>
                 </form>
                 <button class="button button_close"></button>
             </div>
